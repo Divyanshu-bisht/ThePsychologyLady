@@ -1,12 +1,23 @@
-# React + Vite
+✨ Redesign Project Spotlight: The Psychology Lady ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I’m thrilled to share a passion project close to my heart — a refreshed design for one of my favourite teachers @ Bhawana joshi's website, The Psychology Lady, a place that has deeply influenced how I see life.
+Original site: https://lnkd.in/dU8nTUC2
+My redesign: https://lnkd.in/dDASrqPe
 
-Currently, two official plugins are available:
+🤔 Why This Project Matters to Me:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+As a student shaped by her guidance, I’ve always admired how she communicates life’s complexities with warmth, clarity, and wisdom. Her site deserved a design that echoed that same elegance—and I was eager to help bring that vision to life.
 
-## Expanding the ESLint configuration
+💭 What I Focused On in the Redesign:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Modern, Clean Visuals: Streamlined layout, refined typography, and a soothing color palette that reflects calm, clarity, and approachability.
+User-Centered Experience: Improved readability and intuitive navigation to help visitors connect more meaningfully with her content.
+Enhanced Responsiveness: Fully responsive across devices, with thoughtful attention to touch interactions, mobile layouts, and accessibility.
+Preserved Personality: Kept her warm tone and voice intact, ensuring the design supports—not overshadows—her authentic presence.
+
+💬 Final Thoughts:
+
+Working on this redesign wasn’t just about code or aesthetics — it was a way to honour someone who guided me and countless others. Transforming her online presence into something beautiful, functional, and true to her essence was incredibly rewarding.
+
+Here’s to mentors who teach not just lessons, but ways of being. 💖
+I’d love for you to take a look at the redesign and share your thoughts!
