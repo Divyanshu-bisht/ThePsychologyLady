@@ -1,8 +1,8 @@
 ✨ Redesign Project Spotlight: The Psychology Lady ✨
 
 I’m thrilled to share a passion project close to my heart — a refreshed design for one of my favourite teachers @ Bhawana joshi's website, The Psychology Lady, a place that has deeply influenced how I see life.
-Original site: https://lnkd.in/dU8nTUC2
-My redesign: https://lnkd.in/dDASrqPe
+Original site: https://thepsychologylady.com
+My redesign: https://thepsychologylady.netlify.app
 
 🤔 Why This Project Matters to Me:
 
