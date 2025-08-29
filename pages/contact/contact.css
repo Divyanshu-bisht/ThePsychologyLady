@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap');
+
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.map {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 3%;
+}
+
+.map iframe {
+  height: 100%;
+  width: 70%;
+  border: 2px solid #5d3136 !important;
+}
+
+.form {
+  width: 35%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3%;
+  border: 6px solid #5d3136;
+  transition: 100ms ease;
+  box-shadow: 14px 14px 0 0 #7a1e21;
+}
+
+.form:hover {
+  box-shadow: 0px 0px 0 0 #7a1e21;
+  transform: translate(14px, 14px);
+  transition: 150ms ease;
+}
+
+.form h1 {
+  font-family: "Playwrite CA", cursive;
+  font-size: 3rem;
+  color: #5d3136;
+  text-align: center;
+  margin-bottom: 3%;
+  text-decoration: underline;
+}
+
+.last {
+  margin-bottom: 2%;
+}
+
+.form p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 90%;
+  color: #5d3136;
+  font-family: "playwrite ca";
+  text-align: start;
+  display: block;
+}
+
+.inputcont {
+  background-color: #ffffffee;
+  width: 90%;
+  height: 6%;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  box-shadow:
+    -6px -6px 8px 0 rgba(185, 171, 171, 0.5) inset,
+    7px 7px 12px 0 rgba(243, 191, 191, 0.4) inset,
+    6px 6px 14px 0 rgba(54, 54, 54, 0.589),
+    /* darker layer */
+    -3px -3px 12px 0 rgba(248, 232, 232, 0.4);
+}
+
+.inputcont input {
+  background-color: transparent;
+  height: 100%;
+  width: 85%;
+  outline: none;
+  border: none;
+  cursor: none;
+  padding-left: 3%;
+  color: #5d3136;
+  font-family: "fredoka";
+}
+
+.inputcont input::placeholder {
+  color: #5d3136;
+  font-family: "fredoka";
+  font-size: 1rem;
+}
+
+.inputcont svg {
+  height: 100%;
+  width: 6%;
+}
+
+#textarea {
+  height: 30%;
+  width: 90%;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 2% 4%;
+  border: none;
+  outline: none;
+  cursor: none;
+  margin-top: 2%;
+  font-family: "fredoka";
+  background-color: #ffffffee;
+  color: #5d3136;
+  box-shadow:
+    -6px -6px 8px 0 rgba(185, 171, 171, 0.5) inset,
+    7px 7px 12px 0 rgba(243, 191, 191, 0.4) inset,
+    6px 6px 14px 0 rgba(54, 54, 54, 0.589),
+    /* darker layer */
+    -3px -3px 12px 0 rgba(248, 232, 232, 0.4);
+}
+
+#textarea::placeholder {
+  color: #5d3136;
+  font-family: "fredoka";
+  font-size: 1rem;
+}
+
+.contact-btn {
+  height: 6%;
+  width: 70%;
+  margin-top: 5%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background-color: #da405adc;
+  color: #ffffff;
+  padding: 14px 22px;
+  border-radius: 25px;
+  border: 0;
+  cursor: none;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-size: 0.93rem;
+  font-family: "fredoka";
+  letter-spacing: 0.15rem;
+  border: 1.5px solid #7a1e21;
+  transition: 100ms ease;
+  box-shadow: 4px 4px 0 0 #7a1e21;
+}
+
+.contact-btn:hover {
+  box-shadow: 2px 2px 0 0 #7a1e21;
+  transform: translate(2px, 2px);
+  transition: 100ms ease;
+}
+
+.contact-btn:active {
+  box-shadow: 0px 0px 0 0 #7a1e21;
+  transition: 50ms ease;
+  transform: translate(3px, 3px);
+}
+
+/* Overlay */
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease;
+  z-index: 1000;
+}
+
+/* Alert box */
+.alert-box {
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: slideDown 0.3s ease;
+}
+
+.alert-box p {
+  font-size: 1.3rem;
+  font-family: "fredoka";
+  margin-bottom: 20px;
+  color: #ff5252;
+}
+
+.alert-btn {
+  padding: 10px 20px;
+  background: #ff5252;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.alert-btn:hover {
+  background: #ff1744;
+  transform: scale(1.05);
+}
+
+.alert-sticker {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .form {
+    width: 40%;
+    padding: 0 2%;
+  }
+
+  .map iframe {
+    width: 80%;
+  }
+}
+
+/* Tablets and smaller laptops (768px to 1199px) */
+@media (max-width: 1199px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+
+  .map {
+    width: 100%;
+    height: 40vh;
+    min-height: 300px;
+    padding: 2% 5%;
+  }
+
+  .map iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .form {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    min-height: 500px;
+    margin: 20px auto;
+    padding: 30px 20px;
+    border: 4px solid #5d3136;
+    box-shadow: 10px 10px 0 0 #7a1e21;
+  }
+
+  .form:hover {
+    box-shadow: 0px 0px 0 0 #7a1e21;
+    transform: translate(10px, 10px);
+  }
+
+  .form h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .form p {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .inputcont {
+    height: 50px;
+    margin-top: 15px;
+  }
+
+  #textarea {
+    height: 120px;
+    margin-top: 15px;
+    min-height: 100px;
+  }
+
+  .contact-btn {
+    height: 50px;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile phones (up to 767px) */
+@media (max-width: 767px) {
+  .contact {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+    padding: 15px 0;
+  }
+
+  .map {
+    width: 100%;
+    height: 35vh;
+    min-height: 250px;
+    padding: 15px;
+  }
+
+  .map iframe {
+    width: 95%;
+    height: 100%;
+    border: 1px solid #5d3136 !important;
+  }
+
+  .form {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 15px auto;
+    padding: 25px 15px;
+    border: 3px solid #5d3136;
+    box-shadow: 8px 8px 0 0 #7a1e21;
+  }
+
+  .form:hover {
+    box-shadow: 0px 0px 0 0 #7a1e21;
+    transform: translate(8px, 8px);
+  }
+
+  .form h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .form p {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+
+  .inputcont {
+    width: 95%;
+    height: 45px;
+    margin-top: 12px;
+  }
+
+  .inputcont input {
+    font-size: 0.9rem;
+    padding-left: 5%;
+  }
+
+  .inputcont input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .inputcont svg {
+    width: 8%;
+  }
+
+  #textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: 12px;
+    padding: 15px;
+    font-size: 0.9rem;
+    min-height: 80px;
+  }
+
+  #textarea::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .contact-btn {
+    height: 45px;
+    width: 85%;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    padding: 12px 18px;
+    box-shadow: 3px 3px 0 0 #7a1e21;
+  }
+
+  .contact-btn:hover {
+    box-shadow: 1px 1px 0 0 #7a1e21;
+    transform: translate(2px, 2px);
+  }
+
+  .contact-btn:active {
+    transform: translate(2px, 2px);
+  }
+}
+
+/* Small mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  .map {
+    height: 30vh;
+    min-height: 200px;
+    padding: 10px;
+  }
+
+  .form {
+    width: 95%;
+    padding: 20px 10px;
+    border: 2px solid #5d3136;
+    box-shadow: 6px 6px 0 0 #7a1e21;
+  }
+
+  .form:hover {
+    box-shadow: 0px 0px 0 0 #7a1e21;
+    transform: translate(6px, 6px);
+  }
+
+  .form h1 {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+  }
+
+  .form p {
+    font-size: 0.8rem;
+    margin-bottom: 4px;
+  }
+
+  .inputcont {
+    width: 98%;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  .inputcont input {
+    font-size: 0.8rem;
+  }
+
+  .inputcont input::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .inputcont svg {
+    width: 10%;
+  }
+
+  #textarea {
+    width: 98%;
+    height: 90px;
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 0.8rem;
+    min-height: 70px;
+  }
+
+  #textarea::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .contact-btn {
+    height: 40px;
+    width: 90%;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    padding: 10px 15px;
+    letter-spacing: 0.1rem;
+  }
+
+  .alert-box {
+    padding: 20px 25px;
+    margin: 0 15px;
+    max-width: 95%;
+  }
+
+  .alert-box p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+
+  .alert-sticker {
+    font-size: 35px;
+    margin: 10px 0;
+  }
+}
+
+/* Extra small devices (up to 360px) */
+@media (max-width: 360px) {
+  .form h1 {
+    font-size: 1.5rem;
+  }
+
+  .form p {
+    font-size: 0.75rem;
+  }
+
+  .inputcont {
+    height: 38px;
+  }
+
+  .inputcont input {
+    font-size: 0.75rem;
+  }
+
+  .inputcont input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  #textarea {
+    height: 80px;
+    font-size: 0.75rem;
+    min-height: 60px;
+  }
+
+  #textarea::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .contact-btn {
+    height: 38px;
+    font-size: 0.75rem;
+  }
+
+  .alert-box p {
+    font-size: 1rem;
+  }
+
+  .alert-sticker {
+    font-size: 30px;
+  }
+}

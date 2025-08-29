@@ -1,0 +1,155 @@
+.card-container {
+    position: relative;
+    width: 400px;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.image-container {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 120px;
+    height: 120px;
+    background: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.image-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.stars-around {
+    position: absolute;
+    color: #f1c40f;
+    font-size: 20px;
+}
+
+.star-1 {
+    top: 10px;
+    right: -15px;
+}
+
+.star-2 {
+    top: 30px;
+    right: -25px;
+    font-size: 16px;
+}
+
+.star-3 {
+    bottom: 15px;
+    left: -20px;
+    font-size: 14px;
+}
+
+.star-4 {
+    bottom: 5px;
+    left: -10px;
+    font-size: 12px;
+}
+
+.content-box {
+    background: transparent;
+    border-radius: 20px;
+    padding: 80px 30px 30px 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.527);
+    font-family: "fredoka";
+}
+
+.clouds-decoration {
+    font-size: 24px;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.author-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: "fredoka";
+    color: #7a1e21;
+    letter-spacing: 0.8px;
+    margin: 20px 0;
+    /* text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.527); */
+}
+
+.content-description {
+    font-size: 16px;
+    font-weight: 600;
+    color: #eeeeee;
+    letter-spacing: 0.5px;
+    font-family: "fredoka";
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.527);
+    line-height: 1.3;
+    margin: 25px 0;
+}
+
+.play-btn {
+    background: linear-gradient(135deg, #9b4245 0%, #be5c5f 35%, #e79292 100%);
+    border: 2px solid #7a1e21;
+    padding: 3% 2%;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+    cursor: none;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+/* .play-btn:hover {
+    background: #f8f9fa;
+    transform: translateY(-1px);
+} */
+
+.dots-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    height: 30px;
+    background-image: radial-gradient(circle, #bdc3c7 1px, transparent 1px);
+    background-size: 6px 6px;
+    opacity: 0.4;
+}
+
+@media (max-width: 599px) {
+    .card-container{
+        width: 80vw;
+    }
+    .header-title {
+        font-size: 3.5vw;
+    }
+
+    .content-description {
+        font-size: 3.4vw;
+    }
+}
+
+@media (min-width:600) and (max-width: 900px) {
+    .card-container{
+        width: 50vw;
+    }
+}

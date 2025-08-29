@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+
+.menu {
+  display: flex;
+  font-family: "fredoka", sans-serif;
+  font-weight: 600;
+  font-size: 1.03rem;
+  width: 30%;
+  height: 3rem;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  background-color: #eb8e91af;
+  /* background-color: #e2a5a7; */
+  color: #5d3136;
+  border-radius: 120px;
+  border: 1px solid #5d3136;
+  position: fixed;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top 0.4s ease;
+  /* smooth change */
+  z-index: 100;
+  box-shadow: 3px 3px 0 0 #5d3136;
+}
+
+.menu li a {
+  color: #5d3136;
+  text-decoration: none;
+  cursor: none;
+}
+
+.menu li .active {
+  text-decoration: underline;
+  color: #dd2d4a;
+}
+
+.menu.shrink {
+  top: 5%;
+}
+
+@media (max-width: 550px) {
+  /* styles for devices 550px wide or smaller */
+  .menu{
+    width: 35%;
+    height: 2.3rem;
+    font-size: 1.7vw;
+    top: 10%;
+    left: 50%;
+  }
+
+  .navbar img{
+    height: 180% !important;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media (min-width: 550px) and (max-width: 767px) {
+  /* styles for mobile phones */
+  .menu{
+    width: 35%;
+    height: 2.3rem;
+    font-size: 1.7vw;
+    top: 10%;
+  }
+
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* styles for tablets */
+  .menu{
+    width: 37%;
+    font-size: 1.7vw;
+  }
+}
+
+/* Laptop & above (1024px and up) */
+@media (min-width: 1024px) {
+  /* styles for laptops and desktops */
+}

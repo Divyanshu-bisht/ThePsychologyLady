@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+.scroll-container {
+    width: 100%;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #e09b9db9;
+    backdrop-filter: blur(10px);
+    padding:0;
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+}
+
+.marquee__group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 100%;
+    animation: scroll-x 30s linear infinite;
+}
+
+.marquee__item {
+    font-size: 1rem;
+    font-family: "Libertinus Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-size: 300% 300%;
+    white-space: nowrap;
+    margin: 0 8vw;
+}
+
+.marquee__item::before {
+    content: "◆ ";
+    color: #FED16A;
+}
+
+.marquee__item::after {
+    content: " ◆";
+    color: #FED16A;
+}
+
+@keyframes scroll-x {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee:hover .marquee__group {
+    animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+    .marquee__item {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .marquee__item {
+        font-size: 1.5rem;
+        margin: 0 10vw;
+    }
+}

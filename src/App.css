@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+html,
+body,
+#root {
+  background-color: #ffeedc;
+  background-image: url("../../src/assets/asfalt-dark.png");
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a:-webkit-any-link {
+  cursor: none;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+/* ========== Default (Mobile + Tablet) ========== */
+/* Hide custom cursor */
+.cursor,
+.cursor-trail {
+    display: none !important;
+}
+
+/* Restore normal cursor */
+* {
+    cursor: auto !important;
+}
+
+/* Hover-able elements still get proper cursor */
+a,
+button,
+.cursor-hover {
+    cursor: pointer !important;
+}
+
+input,
+textarea,
+select {
+    cursor: text !important;
+}
+
+/* Sparkles or other effects still visible */
+.sparkle {
+    display: block;
+}
+
+/* ========== Desktop (Fine Pointer Devices) ========== */
+@media (hover: hover) and (pointer: fine) {
+    .cursor,
+    .cursor-trail {
+        display: block !important;
+    }
+
+    /* Hide system cursor */
+    * {
+        cursor: none !important;
+    }
+
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    .cursor-hover {
+        cursor: none !important;
+    }
+}

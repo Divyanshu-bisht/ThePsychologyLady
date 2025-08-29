@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+
+.footer{
+  background-color: #ee8c8c;
+  height: 25rem;
+}
+
+.footer p{
+  height: 40%;
+  width: 60%;
+  font-size: 2rem;
+  color: #ffffff;
+  font-family: "fredoka";
+  padding-right: 2%;
+  padding-top: 3%;
+  margin-left: 40%;
+  text-align: center;
+}
+
+.down-footer{
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-img-cont{
+  height: 100%;
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-img-cont img{
+  height: 200%;
+  width: 60%;
+  background-size: cover;
+  margin-left: -40%;
+}
+
+.footer-img-cont svg{
+  margin-left: -5%;
+}
+
+.social{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+  padding-right: 5%;
+}
+
+.icon-cont{
+  height: 25%;
+  width: 11%;
+  background-color: #fff;
+  align-self: flex-end;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: none !important;
+  padding-top: 1%;
+}
+
+.icon-cont a svg:hover{
+  transform: scale(1.08)
+}
+.icon-cont.linkedin svg:hover {
+  transform: scale(1.08);
+}
+
+.copyright{
+  background-color: #eea5a5;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  color: white;
+  font-family: "fredoka";
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+}
+
+.copyright a{
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Edu NSW ACT Cursive";
+  letter-spacing: 0;
+}
+
+/* Extra small devices (up to 500px) */
+@media (max-width: 500px) {
+  /* Your styles here */
+  .footer-img-cont img {
+    margin-left: 0% !important;
+  }
+
+  .footer p{
+    font-size: 2.8vw !important;
+  }
+
+  .icon-cont {
+    height: 30% !important;
+    width: 22%;
+  }
+
+  .copyright{
+    font-size: 4vw;
+  }
+
+  .copyright a{
+    font-size: 3vw;
+  }
+}
+
+/* Small devices (up to 600px) */
+@media (max-width: 600px) {
+  /* Your styles here */
+  .footer{
+    background-color: #ee8c8c;
+    height: 25vh;
+  }
+
+  .footer p{
+    font-size: 2.3vw;
+  }
+
+  .footer-img-cont img {
+    margin-left: -20%;
+  }
+
+  .footer-img-cont svg {
+    height: 15vw;
+    margin-left: -10%;
+  }
+
+  .icon-cont {
+    height: 35%;
+    width: 22%;
+  }
+
+  .icon-cont a svg{
+    height: 6vw;
+  }
+
+  .copyright{
+    height: 6vh;
+  }
+}
+
+/* Mobile (600px – 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  /* Your styles here */
+  .footer{
+    background-color: #ee8c8c;
+    height: 25vh;
+  }
+
+  .footer p{
+    font-size: 2.3vw;
+  }
+
+  .footer-img-cont img {
+    margin-left: -20%;
+  }
+
+  .footer-img-cont svg {
+    height: 15vw;
+  }
+
+  .icon-cont {
+    height: 39%;
+    width: 21%;
+  }
+
+  .icon-cont a svg{
+    height: 6vw;
+  }
+
+  .copyright{
+    height: 6vh;
+  }
+}
+
+/* Tablet (768px – 1306px) */
+@media (min-width: 768px) and (max-width: 1306px) {
+  /* Your styles here */
+  .footer{
+    background-color: #ee8c8c;
+    height: 30vh;
+  }
+
+  .footer p{
+    font-size: 2.3vw;
+  }
+
+  .footer-img-cont img {
+    margin-left: -40%;
+  }
+
+  .footer-img-cont svg {
+    height: 10vw;
+  }
+
+  .icon-cont {
+    height: 39%;
+    width: 15%;
+  }
+
+  .icon-cont a svg{
+    height: 4vw;
+  }
+
+  .copyright{
+    height: 6vh;
+  }
+}
+
+/* Laptop & above (1024px and up) */
+@media (min-width: 1024px) {
+  /* Your styles here */
+}
+
+/* Narrow tablets (768px – 1000px) */
+@media (min-width: 768px) and (max-width: 1000px) {
+  /* Your styles here */
+}
